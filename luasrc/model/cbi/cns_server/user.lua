@@ -68,7 +68,7 @@ udp_timeout.default = 30
 
 -- 开启tcpDNS转udpDNS, 可稍微加快DNS解析速度, 默认关闭
 enable_dns_tcpOverUdp  = s:option(Flag,'Enable_dns_tcpOverUdp', translate("tcpDNS to udpDNS"),translate("Turn on tcpDNS to udpDNS, which can slightly speed up the DNS resolution speed, and it is disabled by default"))
-enable_dns_tcpOverUdp.default = 0
+enable_dns_tcpOverUdp.default = 1
 
 -- 开启TcpDNS,HTTPDNS无需http_tunnel握手，可以稍微加快DNS解析速度，默认关闭
 enable_httpDNS = s:option(Flag,"Enable_httpDNS",translate("Enable tcpDNS"), translate("Enable TcpDNS, HTTPDNS does not require http_tunnel handshake, which can slightly speed up DNS resolution, and is disabled by default"))
